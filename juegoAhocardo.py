@@ -1,13 +1,16 @@
 import time
-nombre = input("¿Como te llamas? ")
+palabra_secreta = "ahorcado"
+nombre = input("Bienvenido al juego del ahorcado!!! \n" +
+               "¿Como es tu nombre?\n")
 print("Hola, " + nombre, "es hora de jugar al ahorcado")
 time.sleep(1)
-print("Comienza a adivinar ")
-time.sleep(0.5)
-palabra_secreta = "escuela de frontera"
 letra_nueva = " "
 vidas = 5
-
+contador = 0
+for i in palabra_secreta:
+    contador += 1
+print("*-*-* Palabra de ",+contador," Letras *-*-*\n"+"*-*-* Comienza a adivinar *-*-*",)
+time.sleep(0.5)
 while vidas > 0:
     fallas = 0
     for letra in palabra_secreta:
