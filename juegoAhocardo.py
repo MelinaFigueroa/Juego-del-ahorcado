@@ -9,7 +9,8 @@ vidas = 5
 contador = 0
 for i in palabra_secreta:
     contador += 1
-print("*-*-* Palabra de ",+contador," Letras *-*-*\n"+"*-*-* Comienza a adivinar *-*-*",)
+print("*-*-* Palabra de ", +contador, " Letras *-*-*\n" +
+      "*-*-* Comienza a adivinar *-*-*",)
 time.sleep(0.5)
 while vidas > 0:
     fallas = 0
